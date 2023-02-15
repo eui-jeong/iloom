@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>일룸</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,300&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="icon" href="https://blog.kakaocdn.net/dn/b6zKbI/btrao6cDOIU/r7mPwRT3xKygQjKTVUkZjK/img.png">
+		<link rel="stylesheet" type="text/css" href="/moon/css/base.css">
+		<link rel="stylesheet" type="text/css" href="iloom.css">
+		<link rel="stylesheet" type="text/css" href="/moon/C4/ani.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script type="text/javascript">
+			window.onload=function() {
+			var speedGap = 0.5;
+			const swiper = new Swiper('#s1.swiper-container', {
+			speed: 1000,
+			loop: true,
+			watchSlidesProgress: true, 
+			pagination: {
+			el: '.swiper-pagination',
+			clickable:true,
+			},
+			autoplay: {
+				delay: 3000
+			},
+			on: {
+			progress: function() {
+				var swiper = this;
+				this.slides.forEach(function(el, i) {
+					// console.log(el.progress);
+					var innerSpeed = swiper.width * speedGap * el.progress;
+					el.querySelector('.slider-inner').style.transform = 'translate(' + innerSpeed + 'px, 0)';
+				})
+			},
+			setTransition: function(el, speed) {
+				var swiper = this;
+				this.slides.forEach(function(el, i) {
+					el.style.transition = speed + 'ms';
+					el.querySelector('.slider-inner').style.transition = speed + 'ms';
+				})
+			}
+			}
+			});
+
+
+			}
+		</script>
+		
+	</head>
+	<body>
+	<div class="wrap">
+		<div class="slid">
+			<div class="menu">
+				<div class="clearfix">
+					<div>
+						<p class="x">X</p>
+					</div>
+					<div>
+						<ul class="clearfix">
+							<li>침실</li>
+							<li>거실</li>
+							<li>주방</li>
+							<li>키즈룸</li>
+							<li>학생방</li>
+							<li>서재</li>
+							<li>펫</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="line">
+						<ul>
+							<li>침대</li>
+							<li>일반침대</li>
+							<li>모션베드</li>
+							<li>패밀리침대</li>
+							<li>매트리스</li>
+							<li>악세사리</li>
+						</ul>
+						<ul>
+							<li>옷장</li>
+						</ul>
+						<ul>
+							<li>수납장</li>
+							<li>협탁</li>
+							<li>서랍장</li>
+							<li>파티션수납장</li>
+						</ul>
+						<ul>
+							<li>화장대</li>
+							<li>스툴</li>
+						</ul>
+						<ul>
+							<li>액세사리</li>
+						</ul>
+					</div>
+					<div class="line">
+						<ul>
+							<li>테이블</li>
+							<li>소파 테이블</li>
+							<li>패밀리 테이블</li>
+							<li>멀티 테이블</li>
+							<li>액세사리</li>
+
+						</ul>
+						<ul>
+							<li>거실장</li>
+						</ul>
+						<ul>
+							<li>소파</li>
+							<li>일자형</li>
+							<li>카우치/코너</li>
+							<li>1인/소파베드</li>
+							<li>리클라이너</li>
+							<li>액세사리</li>
+
+						</ul>
+						<ul>
+							<li>수납장</li>
+							<li>책장</li>
+							<li>서랍장</li>
+							<li>장식장</li>
+							<li>액세사리</li>
+						</ul>
+						<ul>
+							<li>액세사리</li>
+						</ul>
+					</div>
+					<div class="line">
+						<ul>
+							<li>식탁</li>
+						</ul>
+						<ul>
+							<li>수납장</li>
+						</ul>
+						<ul>
+							<li>의자</li>
+						</ul>
+					</div>
+					<div class="line">
+						<ul>
+							<li>침대</li>
+							<li>매트리스</li>
+							<li>액세사리</li>
+						</ul>
+						<ul>
+							<li>책상</li>
+							<li>액세사리</li>
+						</ul>
+						<ul>
+							<li>수납장</li>
+							<li>서랍</li>
+							<li>책장</li>
+							<li>옷장/행거</li>
+							<li>놀이장</li>
+						</ul>
+						<ul>
+							<li>소파</li>
+						</ul>
+						<ul>
+							<li>의자</li>
+						</ul>
+					</div>
+					<div class="line">
+						<ul>
+							<li>책상</li>
+							<li>일반형</li>
+							<li>기능형</li>
+							<li>악세사리</li>
+						</ul>
+						<ul>
+							<li>책장</li>
+						</ul>
+						<ul>
+							<li>수납장</li>
+							<li>옷장</li>
+							<li>행거</li>
+							<li>서랍장</li>
+						</ul>
+						<ul>
+							<li>의자</li>
+						</ul>
+						<ul>
+							<li>침대</li>
+							<li>일반침대</li>
+							<li>수납침대</li>
+							<li>모션침대</li>
+							<li>매트리스</li>
+							<li>액세사리</li>
+						</ul>
+					</div>
+					<div class="line">
+						<ul>
+							<li>책상</li>
+							<li>일반형</li>
+							<li>모션형</li>
+						</ul>
+						<ul>
+							<li>책장</li>
+						</ul>
+						<ul>
+							<li>서랍장</li>
+						</ul>
+						<ul>
+							<li>의자</li>
+							<li>태스크의자</li>
+							<li>프리미엄의자</li>
+							<li>보조의자</li>
+						</ul>
+						<ul>
+							<li>수납장</li>
+							<li>장식장</li>
+						</ul>
+					</div>
+					<div class="line">
+						<ul>
+							<li>가구</li>
+							<li>악세사리</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="nav ">
+					<i class="fas fa-bars"></i>
+					<div class="logo"></div>
+					<div class="nav-right">
+						<ul class="clearfix">
+							<li>로그인</li>
+							<li>회원가입</li>
+							<li>주문배송</li>
+							<li>이벤트</li>
+							<li>고객센터</li>
+							<li>회사소개</li>
+						</ul>
+					</div>
+			</div>
+			<div class="swiper-container" id="s1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slider-inner"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slider-inner"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slider-inner"></div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="no">
+			<div class="pick">
+				<div class="container">
+					<div>
+					<p>iloom</p>
+					<p>'s PICK !</p>
+					</div>
+					<div class="living">
+						<div class="play"></div>
+						<div class="one01"></div>
+						<div class="one02"></div>
+						<div class="one03"></div>
+						<div class="say01"></div>
+						<div class="say02"></div>
+						<div class="say03"></div>
+					</div>
+					<div class="bed">
+						<div class="play2"></div>
+						<div class="one04"></div>
+						<div class="one05"></div>
+						<div class="one06"></div>
+						<div class="sa04"></div>
+						<div class="say05"></div>
+						<div class="say06"></div>
+					</div>
+				</div>
+			</div>
+			<div class="event">
+				<div class="container">
+					<p>Event Zone</p>
+					<div class="clearfix eve">
+						<div>
+							<img src="https://blog.kakaocdn.net/dn/bHwAw2/btrakS0vmpo/aSQZaYy7HnTvpAjxciVkW1/img.jpg">
+						</div>
+						<div>
+							<img src="https://blog.kakaocdn.net/dn/be6VKS/btraoBwqgrb/CLBe415SWn9tQpiVhEB3M0/img.jpg">
+						</div>
+						<div>
+							<img src="https://blog.kakaocdn.net/dn/byV1Jj/btranyGXtIw/AyuXLbHjp4LyoVREqVZqSk/img.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slid2">
+				<p>iloom 시리즈</p>
+				<div class="swiper-container mySwiper2" id="s2">
+			      <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			          <img src="https://blog.kakaocdn.net/dn/yOoIH/btranzfa4rw/PYrSqHPN78E04YzsnLlnDK/img.png" />
+			        </div>
+			        <div class="swiper-slide">
+			          <img src="https://blog.kakaocdn.net/dn/BEfsl/btrao6wyo8Z/giaMuJGAWXNkvp8obdcCjK/img.png" />
+			        </div>
+			        <div class="swiper-slide">
+			          <img src="https://blog.kakaocdn.net/dn/d5SAFZ/btraoCCtdvU/NKHwYJS4UBxFERDrKDPKdK/img.png" />
+			        </div>
+			        <div class="swiper-slide">
+			          <img src="https://blog.kakaocdn.net/dn/bNcpzn/btranbFBTHc/SxXjuiALkDZMlhVcKomp60/img.png" />
+			        </div>
+			        <div class="swiper-slide">
+			          <img src="https://blog.kakaocdn.net/dn/PM2Gi/btrasuQZQCW/mPPyxU5FyodMubRxY2YJpK/img.png" />
+			        </div>
+			        <div class="swiper-slide">
+			          <img src="https://blog.kakaocdn.net/dn/mOsjE/btramfH4D68/DdSCkWTb4Bu5xoCkeDdEO0/img.png" />
+			        </div>
+			      </div>
+			      <div class="swiper-button-next"></div>
+			      <div class="swiper-button-prev"></div>
+			    </div>
+			    <div thumbsSlider="" class="swiper-container mySwiper">
+		      <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="https://blog.kakaocdn.net/dn/lfvOw/btraqRr881a/V8HoS13MULuIVzCSjxSxzK/img.png">
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="https://blog.kakaocdn.net/dn/QN6qS/btranW2fvT2/xXMpCb7uoB5XirDwFxg7Dk/img.png" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="https://blog.kakaocdn.net/dn/bgYfPI/btrang7KLC0/FyhULGxKV1evkOTn5N2vE1/img.png" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="https://blog.kakaocdn.net/dn/dxOsX1/btranXz8exP/v1I14c6hUAwZoDIQM6LX7K/img.png" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="https://blog.kakaocdn.net/dn/cKQ1xo/btral7wKrfc/i79cLFHlPGLCrOaRpmPGOk/img.png" />
+		        </div>
+		        <div class="swiper-slide">
+		          <img src="https://blog.kakaocdn.net/dn/bJ6VHg/btraoOCBunc/b3x75kP6QeJl3r5XzX0gvK/img.png" />
+		        </div>
+		      </div>
+			    </div>
+			</div>
+			<div class="myiloom">
+				<div class="container">
+					# 나의 일룸 생활
+				</div>
+			</div>
+			<div class="myiloom2">
+				<div class="container">
+					<div class="clearfix">
+						<div class="myL01">
+							<div></div>
+							<div>
+								<p>호텔같은 침실 인테리어 완성 <i class="far fa-smile-wink"></i></p>
+							</div>
+							<div class="clearfix">
+								<div class="circle"></div>
+								<div class="txt">
+									<p>아르지안</p>
+									<p>트윈모션베드 1800폭</p>
+									<p>3,210,000원</p>
+								</div>
+							</div>
+						</div>
+						<div class="myL02">
+							<div></div>
+							<div>
+								<p>기능과 디자인 모두! 거실 테이블<i class="far fa-grin-hearts"></i></p>
+							</div>
+							<div class="clearfix">
+								<div class="circle"></div>
+								<div class="txt">
+									<p>푸들</p>
+									<p>소파테이블 1200폭</p>
+									<p>199,000원</p>
+								</div>
+							</div>
+						</div>
+						<div class="myL03">
+							<div></div>
+							<div>
+								<p>실용적이고 예쁜 다이닝 테이블 <i class="far fa-laugh-beam"></i></p>
+							</div>
+							<div class="clearfix">
+								<div class="circle"></div>
+								<div class="txt">
+									<p>시에토스</p>
+									<p>패밀리테이블 1600폭</p>
+									<p>499,000원</p>
+								</div>
+							</div>
+						</div>
+						<div class="myL04">
+							<div></div>
+							<div>
+								<p>여기가 홈카페 맛집 <i class="fas fa-coffee"></i></p>
+							</div>
+							<div class="clearfix">
+								<div class="circle"></div>
+								<div class="txt">
+									<p>레마</p>
+									<p>카페장 1000폭(도어형)</p>
+									<p>449,000원</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="consult">
+				<div class="popup">
+					<div class="x2">X</div>
+					<div class="gabo">
+						<div><img src="https://blog.kakaocdn.net/dn/bTg9K9/btrajPWJBZR/Steq5AFkpsPM2T5Fa1rCdk/img.png"></div>
+						<p>"Decorate your home"</p>
+						<p>일룸 가구로 가상의 3D 공간을 직접 설계해보세요.</p>
+						<div class="clearfix">
+							<div>
+								<div> 
+									<img src="https://blog.kakaocdn.net/dn/cu7DPx/btraFE6SkzJ/Au5pOJHlDg8ej2wD6Qdgm0/img.png"></div>
+								<div>아파트 도면 찾기 <i class="fas fa-angle-double-right"></i></div>
+							</div>
+							<div>
+								<div> 
+								<img src="https://blog.kakaocdn.net/dn/zA4fK/btrav7JOOu6/009H64A9AWKpZc8Iz88MK0/img.png"></div>
+								<div>방 만들기 <i class="fas fa-angle-double-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="vid">
+						<iframe class="backgroundVideo" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="1000" height="567" src="https://www.youtube.com/embed/KcRizJ_zTgk?mute=1&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;playlist=KcRizJ_zTgk&amp;enablejsapi=1&amp;origin=https%3A%2F%2Filoom.urbanbase.com&amp;widgetid=1" id="widget2"></iframe>
+					</div>
+				</div>
+				<div class="container">
+					<p>QUICK MENU</p>
+					<div class="clearfix">
+						<div class="btn">
+						</div>
+						<div class="btn2">
+						</div>
+						<div class="btn3">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="clearfix">
+						<div><img src="https://blog.kakaocdn.net/dn/lO1c9/btrazuQJ6LF/TbKVgTz7dkaqLeO8VKPMZ1/img.png"></div>
+						<div>
+							<ul>
+								<li>회사소개</li>
+								<li>매장안내</li>
+								<li>인재채용</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>고객센터</li>
+								<li>대리점 안내</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>이용약관</li>
+								<li>매장안내</li>
+								<li>개인정보 처리방침</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li><a href="https://www.instagram.com/iloom_official/"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.facebook.com/myiloom/"><i class="fab fa-facebook-f"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="iloom.js"></script>
+	</body>
+</html>
